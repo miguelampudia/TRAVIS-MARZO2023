@@ -5,7 +5,7 @@ dist: xenial
 dotnet: 6.0.202
 branches:
   only:
-    - master
+    - main
 #    - develop
 script:
   - dotnet build
@@ -15,8 +15,8 @@ deploy:
     provider: gae
     # Skip cleanup so api_key.py and vendored dependencies are still there
     skip_cleanup: true
-    keyfile: travici-marzo2023-4207506c546f.json
-    project: travici-marzo2023
+    keyfile: traviscinov22-876e061e94c8.json
+    project: traviscinov22
     version: service-demo
     default: true
     on:
